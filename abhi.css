@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+nav{
+    width: 100%;
+    height: 64px;
+    position: fixed;
+    background: #000;
+}
+nav a img{
+    width: 160px;
+    height: 47px;
+    margin: 9px 70px;
+    margin-right: 0;
+    display: inline-block;
+}
+nav a{
+    text-decoration: none;
+    /* color: #fff; */
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+
+nav .srch{
+    position: absolute;
+    right: 280px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 23px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s;
+}
+nav .usr{
+    position: absolute;
+    right: 155px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 23px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s;
+}
+nav .usr i{
+    padding-right: 5px;
+}
+nav .crt{
+    position: absolute;
+    right: 100px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 23px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .5s;
+}
+nav .crt:hover{
+    color: rgb(189, 189, 189);
+}
+nav .usr:hover{
+    color: rgb(189, 189, 189);
+}
+nav .srch:hover{
+    color: rgb(189, 189, 189);
+}
+
+nav ul{
+    /* display: flex;   */
+    position: absolute;
+    top: 23px;
+    /* left: 250px; */
+    margin-left: 264px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 23px 3px;
+    margin: -24px 0px;
+    margin-right: 20px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 14px;
+    transition: .5s;
+}
+nav ul li .active{
+    color: goldenrod;
+}
+nav ul li .active:hover{
+    color: rgb(255, 183, 0);
+}
+
+nav ul li a:hover{
+color: rgb(163, 162, 162);
+}
+nav ul li ul{
+    position: absolute;
+    top: 41px;
+    min-width: 300px;
+    background: rgb(34, 34, 34);
+    margin: 0px;
+    display: none;
+}
+nav ul ul ul{
+    left: 300px;
+    top: 0;
+}
+nav ul li:hover > ul{
+    display: block;
+}
+nav ul ul li{
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+nav ul ul li a{
+    display: block;
+    padding: 25px 25px;
+    font-size: 14px;
+    font-weight: normal;
+
+}
+nav ul ul li:hover{
+    background: rgb(70, 70, 70);
+}
+nav ul ul li a i{
+    float: right;
+}
+nav ul ul .imgbox_1{
+    min-width: 600px;
+    min-height: 500px;
+}
+nav ul ul .imgbox_1 h1{
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 23px 0;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+nav ul ul .imgbox_1 img{
+    display: block;
+    padding: 10px 75px;
+}
+
+nav ul ul .imgbox_1 p{
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+}
+nav ul ul .imgbox_1 button{
+    display: inline-block;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%);
+    cursor: pointer;
+    padding: 15px 25px;
+    color: rgb(163, 162, 162);
+    background: transparent;
+    border: 2px solid rgb(163, 162, 162);
+    outline: none;
+    margin: 13px 0;
+    transition: .5s;
+}
+nav ul ul .imgbox_1 button:hover{
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+
+
+
+
+
+
+nav ul ul .imgbox_2{
+    min-width: 600px;
+    min-height: 500px;
+    /* z-index: 11; */
+}
+nav ul ul .imgbox_2 h1{
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 23px 0;
+    padding-bottom: 0;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+nav ul ul .imgbox_2 span{
+    display: block;
+    color: #fff;
+    text-align: center;
+}
+nav ul ul .imgbox_2 img{
+    display: block;
+    padding: 10px 75px;
+}
+
+nav ul ul .imgbox_2 p{
+    color: #fff;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+nav ul ul .imgbox_2 p i{
+    color: goldenrod;
+}
+nav ul ul .imgbox_2 button{
+    display: inline-block;
+    left: 50%;
+    position: relative;
+    transform: translate(-99%);
+    cursor: pointer;
+    padding: 15px 50px;
+    color: rgb(163, 162, 162);
+    background: transparent;
+    border: 2px solid rgb(163, 162, 162);
+    outline: none;
+    margin: 13px 0;
+    transition: .5s;
+}
+nav ul ul .imgbox_2 button:hover{
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+nav ul ul .imgbox_2 .config{
+    margin-right: 20px;
+    background: firebrick;
+    color: #fff;
+    border: 2px solid firebrick;
+}
+nav ul ul .imgbox_2 .config:hover{
+    background: rgb(228, 28, 28);
+    border: 2px solid rgb(228, 28, 28);
+}
+
+
+nav ul ul .more{
+    top: 265px;
+}
+nav ul ul .com{
+    
+    top: 330px;
+}
+
+
+
+nav .search{
+    left: 1550px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    padding:20px 0;
+    background: #000;
+    z-index: 11;
+    transition: .8s;
+    display: inline-block;
+}
+nav .search i{
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+nav .search input{
+    width: 1150px;
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0px 20px;
+ color: #fff;   
+}
+nav input[type="checkbox"]{
+    display: none;
+}
+nav #search-btn:checked ~ .search{
+    left: 250px;
+    overflow: hidden;
+}
